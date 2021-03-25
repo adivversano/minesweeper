@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="init()">
+    <div class="background">
+        <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+
+        <div class="options-container">
+            <button onclick="checkLevel(this)">
+                Easy
+            </button>
+            <button onclick="checkLevel(this)">
+                Normal
+            </button>
+            <button onclick="checkLevel(this)">
+                Hard
+            </button>
+        </div>
+        <div class="main-div">
+            <div class="details-container">
+                <div class="lifes-div"><span class="lifes">❤️ ❤️ ❤️</span></div>
+                <span class="smiley" onclick="resetGame(this)">😄</span>
+            </div>
+
+            <div class="game-container" oncontextmenu="return false;"></div>
+            <div class="second-details-container">
+                <span class="record"></span>
+                <span class="timer">000</span>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+
+</html>
