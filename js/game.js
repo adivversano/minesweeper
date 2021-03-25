@@ -91,6 +91,7 @@ function clickedButton(elBtn) {
 
     var elSmiley = document.querySelector('.smiley');
 
+    if (gGame.isFirstClick && cell.isMarked) return;
     if (gGame.isGameOver) return;
     if (gGame.isFirstClick) {
         if (!gGame.startTime) {
