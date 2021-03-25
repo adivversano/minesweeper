@@ -2,7 +2,7 @@
 
 const FLAG = '🚩';
 const EMPTY = '';
-const MINE = '<img class="mine" src="/img/mine.png"/>';
+const MINE = '<img class="mine" src="minesweeper/img/mine.png"/>';
 const COVERED = '';
 const LIFE = '❤️';
 const SMILEY = ['😄', '😟', '🤯', '😎'];
